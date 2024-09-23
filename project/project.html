@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen and (max-width:1150px)" href="phone.css">
+    <style>
+      
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        #navbar{
+            display:flex;
+            position: relative;
+        }
+        #logo{
+            display:flex;
+        }
+        #logo img{
+            height: 100px;
+            margin: 3px 20px;
+        }
+        #navbar ul{
+            display: flex;
+            align-items: center;
+    
+        }
+        #navbar li{
+            list-style: none;
+        }
+        #navbar li a{
+            text-decoration: none; 
+            padding:3px 29px; 
+            color:white;  
+            font-family: 'Baloo Tammudu 2', cursive; 
+            font-size: x-large;
+        }
+        #navbar li a:hover{
+              color:black;
+              border:2px solid black;  
+              background-color: white;
+              border-radius: 20px;
+        }
+        #navbar::before{
+             content: "";
+             background-color: black;
+             height: 100%;
+             width:100%;
+             position:absolute;
+             z-index: -1;
+             opacity: 0.4;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Baloo Tammudu 2', cursive;
+            height:500px;
+            font-size:x-large;
+        }
+        #home h1{
+                 padding: 20px;
+
+        }
+        #home p{
+            font-size:xx-large;
+        }
+        #home .btn{
+            margin:10px;
+            font-size: medium;
+            cursor: pointer;
+            padding:2px;
+            border-radius: 10px;
+            background-color:rgb(107, 88, 88);
+            color:white;
+            font-size:x-large;
+        }
+        #home .btn:hover{
+            font-weight: bolder;
+           
+        }
+        #home::before{
+             content: "";
+             background:url("food.jpg") no-repeat center center/cover;
+             height:750px;
+             width:100%;
+             position:absolute;
+             z-index: -1;
+             opacity: 0.4;
+        } 
+ 
+       #option H1{
+           text-align: center;
+           font-size: 3.8rEM;
+           padding: 100px;
+           margin: 100px;
+       }
+      #services{
+        display:flex;
+        margin:22px;
+      }
+      #services .box
+      {
+        margin-top:-180px;
+   
+      }
+
+    .box{
+        display:block;
+        text-align: center;
+        width: 500px;
+        margin:10px;
+        padding:10px;
+        background-color: rgb(227, 209, 209);
+        border:2px solid black;
+        border-radius: 10px;
+        font-family: 'Baloo Tammudu 2', cursive;
+    }
+    .box img{
+       
+       height: 306px;
+       width: 400px;
+       
+     }
+    
+     .logos img{
+              height:200px;
+    }
+    
+    .clients{
+        display: flex;
+        margin-top: 50px;
+        justify-content:space-evenly;
+        
+    }
+    #clients-section h1{
+        margin:50px;
+        text-align: center;
+        font-size: 3.8rEM;
+        text-decoration:underline;
+    }
+
+    #clients-section::before{
+         content: "";
+         background:url("photo.jpg") center center/cover;
+         height: 60%;
+         width:100%;
+         position:absolute;
+         z-index: -1;
+         opacity: .65;
+    }
+    #contact h1{
+        margin:80px;
+        margin-top: ;
+        text-align: center;
+        font-size: 3.8rEM;
+        text-decoration:underline;
+    }
+    #contact{
+
+        position: relative;
+
+    }
+    #contact-box{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding-bottom: 102px;
+        font-size: large;
+    }
+    #contact-box label{
+        font-size:2rem;
+    }
+    #contact-box input {
+        margin: 5px;
+        width:100%;
+        height:40px;
+        font-size: large;
+    }
+    
+     
+  
+    #contact::before{
+        content: "";
+         background:url("contact1.jpg") no-repeat center/cover;
+         height:100%;
+         width:100%;
+         position:absolute;
+         z-index: -1;
+         opacity: .65;
+    }
+
+    footer{
+        background: black;
+        color:white;
+        padding:10px 22px;
+        text-align: center;
+
+    }
+       
+    
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+        <img src="shubhamlogo.jpg" alt="error">
+        </div>
+        <ul>
+            <li><A href="#">Home</A></li>
+            <li><A href="#">Service</A></li>
+            <li><A href="#">About</A></li>
+            <li><A href="#">Contact Us</A></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Welcome In Shubham's Resaurant</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste quasi </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section ID="option">
+    <h1 class="HEADING"><hr>Our Services <hr></h1>
+     <div id="services"> 
+        <div class="box">
+            <img src="pizza.jpg" alt="error">
+            <h2>Pizza</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi dolores praesentium. Hic, praesentium, quasi pariatur cum quam, atque earum similique minima eveniet culpa voluptatibus?</p>
+        </div>
+        <div class="box">
+            <img src="momos.jpg" alt="error">
+            <h2>Momos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi dolores praesentium. Hic, praesentium, quasi pariatur cum quam, atque earum similique minima eveniet culpa voluptatibus?</p>
+        </div>
+        <div class="box">
+            <img src="dosa.jpg" alt="error">
+            <h2>Burger</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi dolores praesentium. Hic, praesentium, quasi pariatur cum quam, atque earum similique minima eveniet culpa voluptatibus?</p>
+        </div>
+    </div>     
+    </section>
+
+    <section ID="clients-section">
+        <h1><hr>Our Clients</h1><hr>
+        <div class="clients">
+             <div class="logos">
+                <img src="apple-logo.jpg">
+             </div>
+             <div class="logos">
+                <img src="starbucks.jpg">
+             </div>
+             <div class="logos">
+                <img src="zomato.jpg">
+             </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 >Contact Us</h1>
+        <div id="contact-box">
+         <form action="shubham.php">
+            <div class="test">
+                <label for="name">Name:</label>
+                <input type="text" name="myname" id="name" placeholder="enter your name">
+            </div>
+            <div class="test">
+                <label for="Email">Email:</label>
+                <input type="text" name="myname" id="Email" placeholder="enter your email id">
+            </div>
+            <div class="test">
+                <label for="Mobile no">Mobile no:</label>
+                <input type="text" name="myname" id="Mobile no" placeholder="enter your mobile no">
+            </div>
+        
+         </form>
+        </div>
+    </section>
+    <footer>
+        <div id="foot">
+            copyright &copy;www.shubham-resaurant.com. All right reserved
+        </div>
+    
+    </footer>
+  
+</body>
+</html>

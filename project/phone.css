@@ -1,0 +1,26 @@
+#navbar{
+display: flex;
+flex-direction: column;
+
+}
+#home{
+    
+}
+#option{
+
+}
+.heading{
+
+}
+#services{
+    display: flex;
+}
+#box{
+  flex-direction: column;
+}
+#clients-section{
+
+}
+#contact{
+
+}

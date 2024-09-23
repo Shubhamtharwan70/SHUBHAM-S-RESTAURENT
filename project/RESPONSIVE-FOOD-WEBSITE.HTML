@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food</title>
+    <style>
+        *{
+         
+            margin:0px;
+            padding:0px;
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+        #navbar{
+           display: flex;
+          position: relative;
+       
+        }
+        .logo{
+            display: flex;
+            margin:15px;
+        }
+        .logo img{
+            height: 111px;
+        }
+        #navbar ul{
+            display:flex;
+            margin:40px;
+        }
+        #navbar ul li{
+           font-size: 1.3em;
+           margin:8px;
+           list-style: none;
+ 
+        }
+        #navbar ul li a{  
+            margin:80px 50px;
+            padding:13px;
+            border-radius: 10px;
+            text-decoration: none;
+            color:black;
+        }
+         a:hover{  
+             background-color:white;
+             cursor: pointer;
+        }
+        #navbar::before{
+            content:"";
+            background-color: black;
+            position:absolute;
+            height: 100%;
+            width:100%;
+            z-index:-1;
+            opacity: 0.4;
+        }
+     #home{
+        display:flex;
+        font-size:large;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Baloo Tammudu 2', cursive;
+
+
+     }
+     #home h1{
+        margin:5px 12px;
+        padding: 10px;
+        text-align: center;
+        font-weight:bolder;
+     }
+     #home p{
+        font-weight:bolder;
+     }
+  
+     .btn{
+            margin: auto;
+            padding: 8px 8px;
+            border:3px solid black;
+            background-color: rgb(159, 109, 109);
+            border-radius: 15px;
+            width:100px;
+     }
+     .btn:hover{
+        font-weight: bolder;
+        cursor: pointer;
+     }
+     #home::before{
+            content:" ";
+            position: absolute;
+            left:0px;
+            background: url("food.jpg")no-repeat center center/cover;
+            height:100%;
+            width:100%;
+            z-index:-1;
+            opacity: 0.72;
+        }
+    
+        
+ 
+                 
+    
+    
+
+
+    </style>
+</head>
+<body>
+   <nav id="navbar">
+    <div class="logo" >
+        <img src="shubhamlogo.jpg" alt="wait">
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+   </nav>
+   <section id="home">
+        <h1>Welcome In Shubham's Restaurent</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus nihil officia  voluptas.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis</p>
+    <button class="btn"> Order Now</button>
+
+    <section id="services">
+ <p></p>
+    </section>  
+    
+</body>
+</html>
